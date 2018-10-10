@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../Components/EmojiList.json';
+import logo from '../Components/logo.jpg';
 
 class Searchbar extends React.Component{
     constructor(){
@@ -18,15 +19,18 @@ class Searchbar extends React.Component{
             return movie.title.toLowerCase().indexOf(search.toLowerCase()) !==-1 || movie.keywords.toLowerCase().indexOf(search.toLocaleLowerCase()) !==-1
         })
         return(
-            <div>
+            <div className="main">
+                <div className="nav">
+                <img src={logo} alt="im" className="logo"></img>
                 <h1>Emoji Search</h1>
-                <input  value ={this.state.search} onChange={this.onSearchange}></input>
+                </div>
+                <input  value ={this.state.search} onChange={this.onSearchange} placeholder="Type here......." className="inp"></input>
                 <ul>
                     {
                         filtermethod.slice(0,20).map(function(movie,index){
                             return<div key={index}> 
-                            <span>{movie.title}</span>
-                            <span>{movie.symbol}</span> 
+                            <span style={{fontSize:"20px"}}>{movie.title}</span>
+                            <span style={{fontSize:"20px"}}>{movie.symbol}</span> 
                             </div>
                         })
                     }

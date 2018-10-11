@@ -15,20 +15,21 @@ h1 {
   width: 100%;
 }
 .inp {
-  width: 300px;
+  width: 500px;
   margin-top: 10px;
-  padding: 10px;
+  padding: 15px;
   border: 2px solid black;
   border-radius: 20px;
+  font-size:17px;
 }
 .logo {
   width: 50px;
   height: 50px;
-  margin-top: 15px;
+  margin-top: 2px;
 }
 .main {
   background-image: url("./Components/back.jpg");
-  height: 150vh;
+  height: 170vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,6 +41,9 @@ h1 {
 .content {
   margin: 3px;
   font-family: "Lobster Two", cursive;
+}
+.inpcontent:hover{
+    background: #80808094;
 }
 .inpcontent {
   border-bottom: 1px solid black;

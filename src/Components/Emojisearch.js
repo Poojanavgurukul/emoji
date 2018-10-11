@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../Components/EmojiList.json";
 import logo from "../Components/logo.jpg";
+import {Icon} from 'antd';
 
 class Searchbar extends React.Component {
   constructor() {
@@ -35,6 +36,7 @@ class Searchbar extends React.Component {
             className="inp"
             style={{ marginTop: "100px" }}
           />
+          <Icon type="search" />
         </div>
         <ul>
           {filtermethod.slice(0, 20).map(function(movie, index) {

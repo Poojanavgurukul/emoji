@@ -48,3 +48,18 @@ h1 {
 .inpcontent {
   border-bottom: 1px solid black;
 }
+.anticon {
+    display: inline-block;
+    font-style: normal;
+    vertical-align: -0.125em;
+    text-align: center;
+    text-transform: none;
+    line-height: 0;
+    margin-top: 121px;
+    font-size: 30px;
+    color: black;
+    margin-left: -45px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
